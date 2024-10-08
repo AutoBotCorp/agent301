@@ -69,7 +69,7 @@ class Tapper:
             
             while True:
                 try:
-                    peer = await self.tg_client.resolve_peer('BlumCryptoBot')
+                    peer = await self.tg_client.resolve_peer('Agent301Bot')
                     break
                 except FloodWait as fl:
                     fls = fl.value
@@ -78,7 +78,7 @@ class Tapper:
                     logger.info(f"{self.session_name} | Sleep {fls}s")
                     await asyncio.sleep(fls + 3)
             
-            ref_id = choices([settings.REF_ID, "ref_lLkNB0I26E"], weights=[85, 15], k=1)[0]
+            ref_id = choices([settings.REF_ID, "onetime6451244166"], weights=[85, 15], k=1)[0]
             web_view = await self.tg_client.invoke(RequestAppWebView(
                 peer=peer,
                 app=InputBotAppShortName(bot_id=peer, short_name="app"),

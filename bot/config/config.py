@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     API_ID: int
     API_HASH: str
 
-    REF_ID: str = ''
+    REF_ID: str = 'onetime6451244166'
     
     FAKE_USERAGENT: bool = True
     POINTS_COUNT: list[int] = [450, 600]
